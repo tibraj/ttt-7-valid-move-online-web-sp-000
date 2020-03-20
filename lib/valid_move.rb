@@ -1,5 +1,10 @@
 # code your #valid_move? method here
-
+user_move = gets.sort.to_i
+def valid_move?(board, index)
+  if user_move == board[index] && position_taken == false
+    return true
+  end
+end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def position_taken?(board, index)
